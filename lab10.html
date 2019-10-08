@@ -4,19 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Food Place</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel = "stylesheet" href = "./lab10_styles.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <title>Food Place</title>
 </head>
 <body>
     <header>
         <div class = "container m-0 p-0">
-            <div class = "row text-center">
-                <div class = "col-6 logo mt-1">
+            <div class = "row header-row text-center m-0 p-0">
+                <div class = "col-6 logo mt-2 p-0">
                     
                 </div>
                 <div class = "col-2 my-auto">
@@ -31,19 +31,157 @@
             </div>
         </div>
     </header>
-    <main>
-        <section class = "about" id = "aboutSection">
-            <h2>About Us</h2>
+    <main class = "px-3">
+        <section class = "about">
+            <a class = "anchor" id = "aboutSection"></a>
+            <h2 class = "mt-4">Our Story</h2>
             <p>
-                The Galloping Goose was established in 1873 by my great-grandmother, Marike. She inherited from her father a 23 acre apple orchard and his prized goose Gertrude at the age of 16. In the beginning she would sell cider and pies on the edge of town to the villagers. Eventually she saved enough turn the farmhouse at the end of her land into The Galloping Goose. Over the last century The Galloping Goose has been handed down to the eldest daughter who keep the legacy of pub alive. 
+                The Galloping Goose was established in 1873 by my 
+                great-grandmother, Marike. She inherited from her 
+                father a 23 acre apple orchard and his prized goose 
+                Gertrude at the age of 16. In the beginning she would 
+                sell cider and pies on the edge of town to the villagers. 
+                Eventually she saved enough turn the farmhouse at the end 
+                of her land into The Galloping Goose. Over the last century
+                The Galloping Goose has been handed down to the eldest 
+                daughter who keep the legacy of pub alive. 
             </p>
+            <img class = "img-rounded restPic" src = "lab10_images/studland-1101904_1920.jpg" alt = "picture of restaurant">
+            <div class = "pic-caption">Pictured Above: The Galloping Goose</div>
+            
         </section>
-        <section class = "menu" id = "menuSection">
+        <section class = "menu mt-5">
+            <a class = "anchor" id = "menuSection"></a>
+            <h2>Menu</h2>
+            
+            <div class = "container m-0 p-0">
+                <div class = "row m-0">
+                    <div class = "col-6 m-0 p-0">
+                        <h3 class = "text-center">Dinner</h3>
+                        <hr>
+                        <h5>Fish and Chips £8</h5>
+                        <p class = "description">
+                            Fish and fries basically.                       
+                         </p>
+                        
+                        <h5>Bangers and Mash £7</h5>
+                        <p class = "description">
+                            Sausages and mashed potato, with peas and gravy.
+                        </p>
+                       
+                        <h5>Toad in the Hole £7</h5>
+                        <p class = "description">
+                            Sausages in Yorkshire pudding batter served with gravy and vegetables.
+                        </p>
+                        
+                        <h5>Sunday Roast £10</h5>
+                        <p class = "description">
+                            Roasted beef, roast potato, Yorkshire pudding, stuffing, vegetables (roasted: parsnips, Brussels sprouts, peas, carrots, and broccoli) and gravy.                       
+                        </p>
+                       
+                        <h5>Shepard's Pie £9</h5>
+                        <p class = "description">
+                            Ground lamb cooked with vegetables and Guinness for an extra flavor boost, then topped with fluffy mashed potato and baked.
+                        </p>
+                    </div>
+                    <div class = "col-6">
+                        <h3 class = "text-center">Desserts</h3>
+                        <hr>
+                        <h5>Apple Cake</h5>
+                        <p class = "description">
+                            Slim, moist cake made with apples from our own orchard, that is served warm with a dollop of fresh cream.
+                        </p>
 
+                        <h5>Apple Pie</h5>
+                        <p class = "description">
+                            Classic apple pie served hot with custard sauce.
+                        </p>
+
+                        <h5>Apple Crumble</h5>
+                        <p class = "description">
+                            The crumble is made with Bramley apples and served fresh from the oven with clotted cream.
+                        </p>
+
+                        <h5>Spotted Dick</h5>
+                        <p class = "description">
+                            Tender steamed pudding dotted with succulent black currants is drizzled with a luxuriously rich and creamy vanilla custard.
+                        </p>
+
+                        <h5>Eton Mess</h5>
+                        <p class = "description">
+                            Crunchy meringue, whipped cream and fresh strawberry sauce with a splash of ginger cordial adds a twist to this classic dessert.
+                        </p>
+                    </div>
+                </div>
+                <div class = "row row2">
+                    <div class = "col-6">
+                        <h3 class = "text-center">Specialty Drinks</h3>
+                        <hr>
+
+                        <h5>Galloping Goose Cider</h5>
+                        <p class = "description">
+                            Cider brewed from Galloping Goose apple orchard.
+                        </p>
+
+                        <h5>The Sidecar</h5>
+                        <p class = "description">
+                            Cognac, orange liqueur and lemon juice.
+                        </p>
+
+                        <h5>Primm's Iced Tea</h5>
+                        <p class = "description">
+                            Chill brewed orange pekoe tea, fresh lemon juice, Pimm's No. 1 and agave nectar.
+                        </p>
+                    </div>
+                    <div class = "col-6">
+                        <h3 class = "text-center">Beer</h3>
+                        <hr>
+
+                        <h5 class = "text-center">Belhaven Scottish Stout</h5>
+                        <h5 class = "text-center">Harvey's Imperial Extra Double Stout</h5>
+                        <h5 class = "text-center">Morland Old Speckled Hen</h5>
+                        <h5 class = "text-center">Wychwood Hobgolin</h5>
+                        <h5 class = "text-center">Fuller's London Porter</h5>
+                        <h5 class = "text-center">Lovibonds Lagerboy</h5>
+                        <h5 class = "text-center">Carling</h5>
+                        <h5 class = "text-center">Worthington White Shield</h5>
+                        <h5 class = "text-center">Bateman's Rosey Nosey</h5>
+                    </div>
+                </div>
+            </div>
         </section>
-        <section class = "gallery" id = "gallerySection">
+        <section class = "gallery mt-5">
+            <a class = "anchor" id = "gallerySection"></a>
+            <h2>Gallery</h2>
 
+            <div class="container mt-4 mx-0 gallery">
+                <div class="row text-center text-lg-left">
+                    <div class="col-lg-3 col-md-4 col-6 mb-4">
+                        <img class="img-fluid img-thumbnail" src="./lab10_images/beer-3623913_1920.jpg" alt="picture of beer">
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6 mb-4">
+                        <img class="img-fluid img-thumbnail" src="./lab10_images/beer-4010936_1920.jpg" alt="picture of beer">
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6 mb-4">
+                        <img class="img-fluid img-thumbnail" src="./lab10_images/country-2483728_1920.jpg" alt="picture of a tavern">
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6 mb-4">
+                        <img class="img-fluid img-thumbnail" src="./lab10_images/pub-4157100_1920.jpg" alt="picture of a pub">
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6 mb-4">
+                        <img class="img-fluid img-thumbnail" src="./lab10_images/studland-1101904_1920.jpg" alt="picture of studland">
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-6 mb-4">
+                        <img class="img-fluid img-thumbnail" src="./lab10_images/village-3434946_1920.jpg" alt="picture of a village tavern">
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
+    <footer>
+        <div class = "bg-dark text-light text-center">
+            <span>Copyright 2019 @TheGallopingGoose</span>
+        </div>
+    </footer>
 </body>
 </html>
