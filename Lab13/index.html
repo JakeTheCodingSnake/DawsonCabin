@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel = "stylesheet" href = "./styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/5ed70d4ecf.js" crossorigin="anonymous"></script>
+    <title>Jake Dawson</title>
+</head>
+<body>
+    <header class = "bg-dark">
+        <div class = "header-container container-fluid m-0 p-0">
+            <div class = "header-row text-center m-0 p-0">
+                <button type="button" id = "contact-btn" class="btn btn-primary" data-toggle="modal" data-target="#contactModal">
+                   Contact Me
+                </button>
+            </div>
+        </div>
+    </header>
+    <main class = "px-3">
+        <div class = "about-me-container mb-5 mt-4">
+            <h2>Who Am I?</h2>
+
+            <div class = "about-me px-3 py-2">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, commodi repellendus tempore sunt, hic ut officiis explicabo id amet voluptatum labore atque nobis quaerat. Sit officiis nulla dicta tempora enim!
+                </p>
+            </div>
+        </div>
+
+        <h2>Projects</h2>
+        <div class = "tabs_container pt-3 px-3" style = "border: 2px solid black;">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
+                </li>
+                </ul>
+                <div class="tab-content py-3" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt voluptas commodi, voluptates quia ut doloribus eum exercitationem vero repellat accusamus in ipsam nulla, obcaecati nesciunt est sapiente eveniet at saepe!
+                        </p>
+                    </div>
+                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, qui ad tempora velit, deserunt atque nisi nesciunt aliquid esse quo veritatis tempore adipisci ut porro ab neque facilis rerum amet.
+                        </p>
+                    </div>
+                    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                        <p>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non natus quae eos aliquid. Nesciunt quibusdam aut aliquid. Deleniti, architecto vel earum porro temporibus id amet dolorem eaque inventore aliquid ad?
+                        </p>
+                    </div>
+                </div>
+        </div>
+        
+    </main>
+    <footer>
+        <div class = "bg-dark text-light text-center mt-3">
+            <span><i class="fas fa-envelope mr-1"></i> jakeXXX@charter.net  | |  <i class="fas fa-mobile mx-1"></i> 715-894-XXXX</span>
+        </div>
+    </footer>
+</body>
+
+ <!-- Modal -->
+ <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class = "mt-2">Contact Me</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="inputs input-group-text bg-dark text-light">Name</span>
+                        </div>
+                        <input type="text" class="form-control" id = "name" placeholder="John Doe" aria-label="name" aria-describedby="basic-addon1">
+                    </div>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="inputs input-group-text bg-dark text-light">Email</span>
+                        </div>
+                        <input type="text" class="form-control" id = "email" placeholder="johndoe@gmail.com" aria-label="email" aria-describedby="basic-addon1">
+                    </div>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="inputs input-group-text bg-dark text-light">Message</span>
+                        </div>
+                        <textarea class="form-control" id = "message" aria-label="With textarea"></textarea>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</html>

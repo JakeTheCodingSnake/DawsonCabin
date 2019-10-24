@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+  background-color: rgb(205, 205, 209);
+}
+
+header {
+  height: 10rem;
+}
+
+.header-container {
+  background-image: url("./images/LogoSVG.svg");
+  height: 100%;
+  background-size: auto 20rem;
+  background-repeat: no-repeat;
+  border: 2px solid orange;
+}
+
+
+
+.tabs_container {
+  background-color: white;
+  min-height: 30rem;
+}
+
+.about-me {
+  background-color: white;
+  border: 2pt solid black;
+}
+
+.inputs {
+  width: 6rem;
+}
+
+#contact-btn {
+  position: absolute;
+  right: 1rem;
+  top: 6rem;
+}
