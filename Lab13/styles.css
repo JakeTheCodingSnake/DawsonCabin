@@ -5,25 +5,27 @@ body {
   font-family: 'Poppins', sans-serif;
   box-sizing: border-box;
   background-color: rgb(205, 205, 209);
+  overflow-x:hidden;
 }
 
 header {
-  height: 10rem;
+  height: 6rem;
+  background-color: rgb(89, 105, 105);
 }
 
 .header-container {
   background-image: url("./images/LogoSVG.svg");
   height: 100%;
-  background-size: auto 20rem;
+  background-size: auto 110%;
   background-repeat: no-repeat;
-  border: 2px solid orange;
+  border-bottom: 2px solid black;
 }
 
 
 
 .tabs_container {
   background-color: white;
-  min-height: 30rem;
+  min-height: 40rem;
 }
 
 .about-me {
@@ -38,5 +40,41 @@ header {
 #contact-btn {
   position: absolute;
   right: 1rem;
-  top: 6rem;
+  top: 1.75rem;
 }
+
+.cover {
+  height: 20rem;
+  width: auto;
+  border: 2px solid darkslategray;
+}
+
+.pics {
+  background-color: white;
+  padding: 2rem 0;
+  border: 2pt solid black;
+}
+
+.card {
+  border: 2px solid darkslategray;
+}
+
+.projectPics {
+  height: auto;
+  width: 90%;
+  border: 2px solid darkslategray;
+}
+
+.cols {
+  margin-top: 4rem;
+  padding: 0 !important;
+
+}
+
+@media only screen and (max-width: 767px){
+  .cover {
+    width: 75%;
+    height: auto;
+  }
+}
+
