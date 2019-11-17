@@ -2,15 +2,14 @@ body {
   margin: 0;
   padding: 0;
   text-decoration: none;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   box-sizing: border-box;
   background-color: rgb(205, 205, 209);
-  overflow-x:hidden;
+  overflow-x: hidden;
 }
 
 header {
   height: 6rem;
-  background-color: rgb(89, 105, 105);
 }
 
 .header-container {
@@ -20,8 +19,6 @@ header {
   background-repeat: no-repeat;
   border-bottom: 2px solid black;
 }
-
-
 
 .tabs_container {
   background-color: white;
@@ -39,7 +36,7 @@ header {
 
 #contact-btn {
   position: absolute;
-  right: 1rem;
+  right: 1.5rem;
   top: 1.75rem;
 }
 
@@ -68,13 +65,44 @@ header {
 .cols {
   margin-top: 4rem;
   padding: 0 !important;
-
 }
 
-@media only screen and (max-width: 767px){
+.topImgs {
+  height: 80%;
+  width: auto;
+  max-height: 250px;
+}
+
+.about-me img {
+  margin: auto;
+  display: block;
+}
+
+#dropdownLinks {
+  position: absolute;
+  top: 1.75rem;
+  right: 9.5rem;
+}
+
+#packersImage {
+  border: 2pt solid darkslategray;
+}
+
+@media only screen and (max-width: 767px) {
   .cover {
     width: 75%;
     height: auto;
   }
-}
 
+  #secondDiv {
+    padding-top: 2rem;
+  }
+
+  #packersImage {
+    margin-top: 1rem;
+  }
+
+  #uwecLogo {
+    margin-top: 1rem;
+  }
+}
