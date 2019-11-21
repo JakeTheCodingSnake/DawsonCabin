@@ -17,13 +17,58 @@ footer {
   color: ghostwhite;
 }
 
+/* attractions stuff */
+.attractionSection1 {
+  background-color: rgb(167, 247, 247);
+  padding: 0 1rem 2rem 1rem;
+}
+#attraction1_1IMG {
+  width: 50%;
+  height: auto;
+  float: right;
+  margin: 0 0 1rem 1rem;
+  border-radius: 5px;
+  border: 2pt solid darkslategray;
+}
+.linkWrapper {
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.attractionSection2 {
+  background-color: rgb(5, 189, 189);
+  padding: 0 1rem 2rem 1rem;
+}
+
+#attraction2IMG {
+  width: 50%;
+  height: auto;
+  float: left;
+  margin: 0 1rem 0.5rem 0;
+  border-radius: 5px;
+  border: 2pt solid ghostwhite;
+}
+#attraction2Link {
+  text-align: right;
+}
+
+.attractionSection3 {
+  background-color: rgb(167, 247, 247);
+  padding: 0 1rem 2rem 1rem;
+}
+#attraction3IMG {
+  width: 50%;
+  height: auto;
+  float: right;
+  margin: 0 0 0.5rem 1rem;
+  border-radius: 5px;
+  border: 2pt solid darkslategray;
+}
+
+/* home stuff */
 .homePadding {
   padding: 0 1rem 0 1rem;
 }
-
-
-
-
 
 .section1 {
   background-color: rgb(5, 189, 189);
@@ -31,8 +76,7 @@ footer {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
-  grid-template-areas:
-    "home1 home2";
+  grid-template-areas: "home1 home2";
 }
 #home1 {
   grid-area: home1;
@@ -70,7 +114,6 @@ footer {
   grid-area: quote3;
 }
 
-
 .section3 {
   background-color: rgb(5, 189, 189);
   padding-top: 1rem;
@@ -78,8 +121,7 @@ footer {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
-  grid-template-areas:
-    "home4 home5";
+  grid-template-areas: "home4 home5";
 }
 #home4 {
   grid-area: home4;
@@ -91,8 +133,7 @@ footer {
 #home5 {
   grid-area: home5;
   height: auto;
-} 
-
+}
 
 .home3Quotes {
   display: flex;
@@ -137,7 +178,6 @@ footer {
   padding: 1rem;
 }
 
-
 /* photos page */
 .gallery {
   display: grid;
@@ -160,79 +200,138 @@ footer {
   padding: 1rem;
 }
 
-#lightbox {
+#lightboxDiv {
   position: fixed;
   z-index: 1000;
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0,0,0,.8);
+  background-color: rgba(0, 0, 0, 0.8);
   display: none;
+  text-align: center;
 }
 
-#lightbox span {
-  background-color: ghostwhite;
-  position: fixed;
-  top: 81vh;
-  max-width: 80vw;
-  padding: 1rem;
-  border-radius: 5px;
-}
-
-#lightbox.active {
+#lightboxDiv.active {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
 
+#lightbox div {
+  background-color: ghostwhite;
+  width: 55vw;
+  padding: 1rem;
+  border-radius: 5px;
+  margin: auto;
+}
+
 #lightbox img {
-  max-width: 90%;
-  max-height: 80%;
+  width: 55vw;
+  height: auto;
   padding: 4px;
   background-color: black;
   border: 2px solid white;
 }
 
-
-
-
-
-
-/*nav stuff*/
-nav{
-  display:flex;
-  justify-content: space-around;
-  align-items:center;
-  min-height: 8vh;
-  background-color: #5d4954;
-  font-family: 'Poppins', sans-serif;
+/* review stuff */
+.reviewMain {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    "review1 review2 review3"
+    "review4 review5 review6"
+    "review7 review8 review9";
+  grid-column-gap: 2rem;
+  grid-row-gap: 2rem;
+  background-color: rgb(5, 189, 189);
+  padding: 0 2rem 2rem 2rem;
+}
+.review1 {
+  grid-area: review1;
+}
+.review2 {
+  grid-area: review2;
+}
+.review3 {
+  grid-area: review3;
+}
+.review4 {
+  grid-area: review4;
+}
+.review5 {
+  grid-area: review5;
+}
+.review6 {
+  grid-area: review6;
+}
+.review7 {
+  grid-area: review7;
+}
+.review8 {
+  grid-area: review8;
+}
+.review9 {
+  grid-area: review9;
+}
+.reviews {
+  background-color: rgb(167, 247, 247);
+  border-radius: 5px;
+  padding: 1rem;
+  position: relative;
+  min-height: 23rem;
+  z-index: 1;
+}
+.date {
+  margin-bottom: 0.5rem;
+}
+.rating {
+  position: absolute;
+  bottom: 1rem;
+}
+.reviewH2 {
+  margin: 1rem 0 0.5rem 2rem;
 }
 
-.logo{
-  color:rgb(226,226,226);
+/*nav stuff*/
+nav {
+  padding-left: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 8vh;
+  background-color: #5d4954;
+  font-family: "Poppins", sans-serif;
+}
+
+.logo {
+  color: ghostwhite;
   text-transform: uppercase;
   letter-spacing: 5px;
   font-size: 20px;
 }
+.logo a {
+  color: ghostwhite;
+}
 
-.nav-links{
+.nav-links {
   display: flex;
   justify-content: space-around;
   width: 40%;
 }
 
-.nav-links li{
+.nav-links li {
   list-style: none;
 }
 
-.nav-links a{
-  color: rgb(226,226,226);
+.nav-links a {
+  color: ghostwhite;
   text-decoration: none;
   letter-spacing: 3px;
   font-weight: bold;
   font-size: 15px;
-  padding: 0 .5rem 0 .5rem;
+  padding: 0 0.5rem 0 0.5rem;
 }
 
 .nav-links a:hover {
@@ -241,36 +340,38 @@ nav{
   border-radius: 10px;
 }
 
-.burger{
+.burger {
   display: none;
   cursor: pointer;
 }
 
-.burger div{
+.burger div {
   width: 25px;
   height: 2px;
-  background-color: rgb(226,226,226);
+  background-color: rgb(226, 226, 226);
   margin: 5px;
   transition: all 0.3s ease;
 }
 
-@media screen and (max-width: 1024px){
-  .nav-links{
+@media screen and (max-width: 1024px) {
+  .nav-links {
     width: 60%;
   }
 }
 
-
-@media screen and (max-width: 950px){
-  body{
+@media screen and (max-width: 950px) {
+  body {
     overflow-x: hidden;
   }
-  .nav-links{
+  footer {
+    padding: 0;
+  }
+  .nav-links {
     position: absolute;
     right: 0px;
     height: 92vh;
     top: 8vh;
-    background-color: #5D4954;
+    background-color: #5d4954;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -278,11 +379,12 @@ nav{
     transform: translateX(100%);
     transition: transform 0.5s ease-in;
     font-size: 30px;
+    z-index: 1000;
   }
-  .nav-links li{
+  .nav-links li {
     opacity: 0;
   }
-  .burger{
+  .burger {
     display: block;
     position: absolute;
     right: 2em;
@@ -292,13 +394,24 @@ nav{
     color: black;
     border-radius: 10px;
     font-size: 24px;
-    transition: .2s ease-in;
+    transition: 0.2s ease-in;
   }
+
+  /* photos stuff */
+  #lightbox div {
+    width: 85vw;
+  }
+
+  #lightbox img {
+    width: 85vw;
+  }
+
+  /* home stuff */
   .section1 {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
-    grid-template-areas: 
+    grid-template-areas:
       "home1"
       "home2";
   }
@@ -306,7 +419,7 @@ nav{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 10% 1fr 1fr 1fr;
-    grid-template-areas: 
+    grid-template-areas:
       "h2"
       "quote1"
       "quote2"
@@ -316,7 +429,7 @@ nav{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
-    grid-template-areas: 
+    grid-template-areas:
       "home5"
       "home4";
   }
@@ -329,29 +442,78 @@ nav{
   #photosH2 {
     text-align: center;
   }
+
+  /* review page stuff */
+  .reviewMain {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(9, 1fr);
+    grid-template-areas:
+      "review1"
+      "review2"
+      "review3"
+      "review4"
+      "review5"
+      "review6"
+      "review7"
+      "review8"
+      "review9";
+    grid-row-gap: 2rem;
+    background-color: rgb(5, 189, 189);
+    padding: 0 2rem 2rem 2rem;
+  }
+  .reviews {
+    min-height: 15rem;
+  }
+  .reviewH2 {
+    text-align: center;
+  }
+
+  /* attraction stuff */
+  #attraction1_1IMG {
+    display: flex;
+    float: none;
+    width: 90%;
+    margin-bottom: 1rem;
+    margin: 1rem auto;
+  }
+  #attraction2IMG {
+    display: flex;
+    float: none;
+    width: 90%;
+    margin-bottom: 1rem;
+    margin: 1rem auto;
+  }
+  #attraction3IMG {
+    display: flex;
+    float: none;
+    width: 90%;
+    margin-bottom: 1rem;
+    margin: 1rem auto;
+  }
 }
 
-.nav-active{
+.nav-active {
   transform: translateX(0%);
 }
 
-@keyframes navLinkFade{
-  from{
+@keyframes navLinkFade {
+  from {
     opacity: 0;
     transform: translateX(50px);
   }
-  to{
+  to {
     opacity: 1;
     transform: translateX(0px);
   }
 }
 
-.toggle .line1{
+.toggle .line1 {
   transform: rotate(-45deg) translate(-5px, 6px);
 }
-.toggle .line2{
+.toggle .line2 {
   opacity: 0;
 }
-.toggle .line3{
+.toggle .line3 {
   transform: rotate(45deg) translate(-4px, -5px);
 }
