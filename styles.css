@@ -6,6 +6,11 @@
   box-sizing: border-box;
 }
 
+p,
+span {
+  font-size: 18px;
+}
+
 body {
   min-height: 100vh;
   background-color: rgb(5, 189, 189);
@@ -13,7 +18,7 @@ body {
 
 footer {
   background-color: #5d4954;
-  padding: 0 20vw 0 20vw;
+  padding: 0.5rem 10vw 0.5rem 10vw;
   color: ghostwhite;
 }
 
@@ -22,6 +27,10 @@ footer {
 }
 
 .fa-mobile {
+  margin-right: 0.5rem;
+}
+
+.fa-road {
   margin-right: 0.25rem;
 }
 
@@ -64,8 +73,9 @@ footer {
   background-color: rgb(167, 247, 247);
   padding: 0 1rem 2rem 1rem;
 }
+
 #attraction3IMG {
-  width: 50%;
+  width: 32%;
   height: auto;
   float: right;
   margin: 0 0 0.5rem 1rem;
@@ -81,6 +91,7 @@ footer {
 #planImage1 {
   width: 100%;
   height: auto;
+  max-width: 30rem;
 }
 
 .planH3 {
@@ -112,9 +123,11 @@ footer {
 }
 .gmap_canvas {
   position: relative;
-  padding-bottom: 75%;
+  padding-bottom: 40%;
   height: 0;
   overflow: hidden;
+  min-width: 50rem;
+  max-height: 20rem;
 }
 
 /* home stuff */
@@ -125,13 +138,16 @@ footer {
   background-color: rgb(5, 189, 189);
   padding: 1rem 0 1rem 0;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 3fr 2fr;
   grid-template-rows: 1fr;
   grid-template-areas: "home1 home2";
 }
 #home1 {
   grid-area: home1;
   height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
 }
 #home2 {
   grid-area: home2;
@@ -143,7 +159,7 @@ footer {
 
 .section2 {
   background-color: rgb(167, 247, 247);
-  padding-bottom: 3rem;
+  padding: 2rem 0 5rem 0;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 20% 1fr;
@@ -167,10 +183,10 @@ footer {
 
 .section3 {
   background-color: rgb(5, 189, 189);
-  padding-top: 1rem;
+  padding: 2rem 0 2rem 0;
   margin-top: 0;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 3fr 2fr;
   grid-template-rows: 1fr;
   grid-template-areas: "home4 home5";
 }
@@ -181,10 +197,16 @@ footer {
   height: auto;
   align-self: center;
   padding: 0 1rem 0 1rem;
+  display: flex;
+  align-content: center;
+  justify-content: center;
 }
 #home5 {
   grid-area: home5;
   height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
 }
 
 .home3Quotes {
@@ -196,7 +218,7 @@ footer {
 .footerDiv {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-content: center;
   height: 3rem;
 }
@@ -218,12 +240,14 @@ footer {
   height: auto;
   border-radius: 5px;
   border: 2pt solid ghostwhite;
+  max-width: 30rem;
 }
 #homeImg2 {
   width: 100%;
   height: auto;
   border-radius: 5px;
   border: 2pt solid ghostwhite;
+  max-width: 50rem;
 }
 
 .textPadding {
@@ -416,7 +440,10 @@ nav {
     overflow-x: hidden;
   }
   footer {
-    padding: 0;
+    padding: 0.25rem 0 0.25rem 0;
+  }
+  .logo {
+    letter-spacing: 2px;
   }
   .nav-links {
     position: absolute;
@@ -451,7 +478,7 @@ nav {
 
   /* planning stuff */
   .planSpan {
-    padding: 0 0 3rem 0;
+    padding: 0 1rem 3rem 1rem;
   }
   .checkBoxWrapper {
     margin-left: 1rem;
@@ -461,6 +488,10 @@ nav {
   }
   .planMain {
     margin-bottom: 0;
+  }
+  .gmap_canvas {
+    min-width: 95vw;
+    height: 60rem;
   }
 
   /* photos stuff */
@@ -476,7 +507,7 @@ nav {
   .section1 {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
     grid-template-areas:
       "home1"
       "home2";
@@ -494,7 +525,7 @@ nav {
   .section3 {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
     grid-template-areas:
       "home5"
       "home4";
@@ -507,6 +538,28 @@ nav {
   }
   #photosH2 {
     text-align: center;
+  }
+  #homeImg1 {
+    width: auto%;
+    height: 100%;
+    max-width: unset;
+  }
+  #home2 {
+    height: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
+  #home5 {
+    height: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
+  #homeImg2 {
+    width: 100%;
+    height: auto;
+    max-width: unset;
   }
 
   /* review page stuff */
@@ -539,21 +592,21 @@ nav {
   #attraction1_1IMG {
     display: flex;
     float: none;
-    width: 90%;
+    width: 100%;
     margin-bottom: 1rem;
     margin: 1rem auto;
   }
   #attraction2IMG {
     display: flex;
     float: none;
-    width: 90%;
+    width: 100%;
     margin-bottom: 1rem;
     margin: 1rem auto;
   }
   #attraction3IMG {
     display: flex;
     float: none;
-    width: 90%;
+    width: 100%;
     margin-bottom: 1rem;
     margin: 1rem auto;
   }
