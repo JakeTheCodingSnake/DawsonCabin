@@ -64,10 +64,14 @@ document.body.appendChild(lightboxDiv);
 
 const images = document.querySelectorAll("img");
 images.forEach(image => {
+  var doShowDescription = true;
   image.addEventListener("click", e => {
     lightboxDiv.classList.add("active");
     const img = document.createElement("img");
     const description = document.createElement("div");
+    if(image.id === "" || image.id != parseInt(image.id)) {
+      doShowDescription = false;
+    }
     description.innerHTML = descriptions[image.id];
 
     img.src = image.src;
@@ -75,7 +79,9 @@ images.forEach(image => {
       lightbox.removeChild(lightbox.firstChild);
     }
     lightbox.appendChild(img);
-    lightbox.appendChild(description);
+    if(doShowDescription) {
+      lightbox.appendChild(description);
+    }
   });
 });
 

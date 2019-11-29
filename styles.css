@@ -13,6 +13,7 @@ span {
 
 body {
   min-height: 100vh;
+  max-width: 100vw;
   background-color: rgb(5, 189, 189);
 }
 
@@ -34,18 +35,67 @@ footer {
   margin-right: 0.25rem;
 }
 
+/* cabins stuff */
+.cabinsMain iframe {
+  min-width: 30vw;
+  width: 30vw;
+  height: 20rem;
+}
+.cabinsGallery {
+  padding: 1rem 1rem 2rem 1rem;
+}
+.cabinInfo {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 2rem 1rem 2rem 1rem;
+}
+.cabinInfo p {
+  margin-bottom: 1rem;
+}
+.calendar {
+  padding-left: 1rem;
+}
+.cabinInfo h3 {
+  margin-bottom: 1rem;
+}
+.bookNow {
+  text-align: center;
+  background-color: goldenrod ;
+  padding: .5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  width: 8rem;
+}
+.bookNow:hover {
+  background-color: gold;
+  color: black;
+}
+.bookNowWrapper {
+  text-align: center;
+}
+
+.background1 {
+  background-color: rgb(5, 189, 189);
+}
+.background2 {
+  background-color: rgb(167, 247, 247);
+}
+
 /* attractions stuff */
 .attractionSection1 {
   background-color: rgb(167, 247, 247);
   padding: 0 1rem 2rem 1rem;
 }
 #attraction1_1IMG {
-  width: 50%;
+  width: 90%;
   height: auto;
   float: right;
   margin: 0 0 1rem 1rem;
   border-radius: 5px;
   border: 2pt solid darkslategray;
+  max-width: 42rem;
 }
 .linkWrapper {
   text-align: center;
@@ -58,12 +108,13 @@ footer {
 }
 
 #attraction2IMG {
-  width: 50%;
+  width: 90%;
   height: auto;
   float: left;
   margin: 0 1rem 0.5rem 0;
   border-radius: 5px;
   border: 2pt solid ghostwhite;
+  max-width: 35rem;
 }
 #attraction2Link {
   text-align: right;
@@ -75,12 +126,13 @@ footer {
 }
 
 #attraction3IMG {
-  width: 32%;
+  width: 90%;
   height: auto;
   float: right;
   margin: 0 0 0.5rem 1rem;
   border-radius: 5px;
   border: 2pt solid darkslategray;
+  max-width: 28rem;
 }
 
 /* planning stuff */
@@ -257,7 +309,7 @@ footer {
 /* photos page */
 .gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 8fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 8fr));
   grid-column-gap: 2rem;
   grid-row-gap: 2rem;
   width: 100%;
@@ -435,6 +487,15 @@ nav {
   }
 }
 
+@media screen and (max-width: 450px) {
+  .footerDiv {
+    height: 4.5rem;
+  }
+  .gallery img {
+    max-width: 92%;
+  }
+}
+
 @media screen and (max-width: 950px) {
   body {
     overflow-x: hidden;
@@ -469,12 +530,24 @@ nav {
     right: 2em;
   }
   .nav-links a:hover {
-    background-color: rgb(5, 189, 189);
-    color: black;
-    border-radius: 10px;
-    font-size: 24px;
-    transition: 0.2s ease-in;
+    color: white;
+    background-color: #5d4954;
   }
+
+  /* cabins stuff */
+  .cabinInfo {
+    flex-wrap: wrap;
+  }
+  .calendar {
+    margin-top: 2rem;
+    padding: 0;
+  }
+  .cabinsMain iframe {
+    min-width: 94vw;
+    width: 94vw;
+    height: 30rem;
+  }
+  
 
   /* planning stuff */
   .planSpan {
@@ -490,7 +563,7 @@ nav {
     margin-bottom: 0;
   }
   .gmap_canvas {
-    min-width: 95vw;
+    min-width: 90vw;
     height: 60rem;
   }
 
@@ -595,6 +668,7 @@ nav {
     width: 100%;
     margin-bottom: 1rem;
     margin: 1rem auto;
+    max-width: 100%;
   }
   #attraction2IMG {
     display: flex;
@@ -602,6 +676,7 @@ nav {
     width: 100%;
     margin-bottom: 1rem;
     margin: 1rem auto;
+    max-width: 100%;
   }
   #attraction3IMG {
     display: flex;
@@ -609,6 +684,7 @@ nav {
     width: 100%;
     margin-bottom: 1rem;
     margin: 1rem auto;
+    max-width: 100%;
   }
 }
 
