@@ -61,8 +61,8 @@ footer {
 }
 .bookNow {
   text-align: center;
-  background-color: goldenrod ;
-  padding: .5rem;
+  background-color: goldenrod;
+  padding: 0.5rem;
   border-radius: 5px;
   cursor: pointer;
   color: white;
@@ -547,7 +547,6 @@ nav {
     width: 94vw;
     height: 30rem;
   }
-  
 
   /* planning stuff */
   .planSpan {
@@ -563,7 +562,7 @@ nav {
     margin-bottom: 0;
   }
   .gmap_canvas {
-    min-width: 90vw;
+    min-width: 93vw;
     height: 60rem;
   }
 
@@ -580,7 +579,7 @@ nav {
   .section1 {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: auto auto;
     grid-template-areas:
       "home1"
       "home2";
@@ -598,7 +597,7 @@ nav {
   .section3 {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: auto auto;
     grid-template-areas:
       "home5"
       "home4";
@@ -613,8 +612,8 @@ nav {
     text-align: center;
   }
   #homeImg1 {
-    width: auto%;
-    height: 100%;
+    width: 100%;
+    height: auto !important;
     max-width: unset;
   }
   #home2 {
@@ -633,6 +632,14 @@ nav {
     width: 100%;
     height: auto;
     max-width: unset;
+  }
+  #section2H2 {
+    padding-bottom: 0;
+    padding-top: 0;
+    margin-bottom: 0;
+  }
+  #quote1 {
+    padding-top: 0;
   }
 
   /* review page stuff */
@@ -655,10 +662,11 @@ nav {
     padding: 0 2rem 2rem 2rem;
   }
   .reviews {
-    min-height: 15rem;
+    max-height: 15rem;
   }
   .reviewH2 {
     text-align: center;
+    margin: 1rem 0 1rem 0;
   }
 
   /* attraction stuff */
