@@ -178,8 +178,10 @@ footer {
   padding-bottom: 40%;
   height: 0;
   overflow: hidden;
-  min-width: 50rem;
-  max-height: 20rem;
+  min-width: 55vw;
+  min-height: 45vh;
+  max-height: 45vh;
+  max-width: 70vw;
 }
 
 /* home stuff */
@@ -242,6 +244,7 @@ footer {
   grid-template-rows: 1fr;
   grid-template-areas: "home4 home5";
 }
+
 #home4 {
   grid-area: home4;
   text-align: center;
@@ -494,6 +497,12 @@ nav {
   .gallery img {
     max-width: 92%;
   }
+  #homePicAndLogo {
+    min-height: 25vh;
+  }
+  #section2H2 {
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 950px) {
@@ -567,15 +576,30 @@ nav {
   }
 
   /* photos stuff */
+  #lightboxDiv.active {
+    width: 100vw;
+    height: 100vh;
+  }
+  #lightbox {
+    width: 100vw;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
   #lightbox div {
-    width: 85vw;
+    width: 90vw;
   }
 
   #lightbox img {
-    width: 85vw;
+    width: 90vw;
   }
 
   /* home stuff */
+  .centerText {
+    text-align: center;
+  }
   .section1 {
     display: grid;
     grid-template-columns: 1fr;
@@ -587,7 +611,7 @@ nav {
   .section2 {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 10% 1fr 1fr 1fr;
+    grid-template-rows: 7% 1fr 1fr 1fr;
     grid-template-areas:
       "h2"
       "quote1"
@@ -674,24 +698,21 @@ nav {
     display: flex;
     float: none;
     width: 100%;
-    margin-bottom: 1rem;
-    margin: 1rem auto;
+    margin: 0 auto 1rem auto;
     max-width: 100%;
   }
   #attraction2IMG {
     display: flex;
     float: none;
     width: 100%;
-    margin-bottom: 1rem;
-    margin: 1rem auto;
+    margin: 0 auto 1rem auto;
     max-width: 100%;
   }
   #attraction3IMG {
     display: flex;
     float: none;
     width: 100%;
-    margin-bottom: 1rem;
-    margin: 1rem auto;
+    margin: 0 auto 1rem auto;
     max-width: 100%;
   }
 }
