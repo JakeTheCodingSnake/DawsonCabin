@@ -33,7 +33,16 @@
 
       <div id="id"></div>
     </nav>
-
+    <div class="weatherBanner">
+      <a
+        class="weatherwidget-io"
+        href="https://forecast7.com/en/53d52n103d74/tobin-lake/"
+        data-label_1="TOBIN LAKE"
+        data-label_2="WEATHER"
+        data-theme="original"
+        >TOBIN LAKE WEATHER</a
+      >
+    </div>
     <main class="planMain">
       <section class="section1 homePadding">
         <div id="home1">
@@ -123,8 +132,9 @@
             ></iframe>
           </div>
         </div>
-        <div id="home5 planDiv3">
+        <div id="home5" class="planDiv3">
           <h2 class="textPadding planChecklistH2">Travelers Checklist</h2>
+
           <div class="checkBoxWrapper">
             <input type="checkbox" class="planCheckBox" /> Passport/Visa
           </div>
@@ -182,5 +192,17 @@
       src="https://kit.fontawesome.com/5ed70d4ecf.js"
       crossorigin="anonymous"
     ></script>
+    <script>
+      !(function(d, s, id) {
+        var js,
+          fjs = d.getElementsByTagName(s)[0];
+        if (!d.getElementById(id)) {
+          js = d.createElement(s);
+          js.id = id;
+          js.src = "https://weatherwidget.io/js/widget.min.js";
+          fjs.parentNode.insertBefore(js, fjs);
+        }
+      })(document, "script", "weatherwidget-io-js");
+    </script>
   </body>
 </html>

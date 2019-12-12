@@ -156,10 +156,13 @@ footer {
   padding: 0 1rem 1rem 1rem;
 }
 
+.planDiv3 {
+  display: flex;
+  flex-direction: column;
+}
 .planCheckBox {
   width: 1rem;
   height: 1rem;
-  display: inline-block;
 }
 .checkBoxWrapper {
   margin-bottom: 0.5rem;
@@ -563,9 +566,12 @@ nav {
   }
   .checkBoxWrapper {
     margin-left: 1rem;
+    display: block;
   }
   .planChecklistH2 {
     text-align: center;
+    margin-bottom: 1rem;
+    display: block;
   }
   .planMain {
     margin-bottom: 0;
@@ -573,6 +579,9 @@ nav {
   .gmap_canvas {
     min-width: 93vw;
     height: 60rem;
+  }
+  .planDiv3 {
+    text-align: left !important;
   }
 
   /* photos stuff */
